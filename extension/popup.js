@@ -38,7 +38,7 @@ chrome.tabs.query(
 		if (tabs?.length) {
 			chrome.tabs.sendMessage(
 				tabs[0].id,
-				{ action: 'model', model: 'Bard' },
+				{ action: 'model', model: 'bard' },
 				function (_) {
 					console.log('is Bard');
 				}
@@ -52,7 +52,7 @@ chrome.tabs.query(
 		if (tabs?.length) {
 			chrome.tabs.sendMessage(
 				tabs[0].id,
-				{ action: 'model', model: 'Meta' },
+				{ action: 'model', model: 'meta' },
 				function (_) {
 					console.log('is Meta');
 				}
@@ -66,7 +66,7 @@ chrome.tabs.query(
 		if (tabs?.length) {
 			chrome.tabs.sendMessage(
 				tabs[0].id,
-				{ action: 'model', model: 'Claude' },
+				{ action: 'model', model: 'claude' },
 				function (_) {
 					console.log('is Claude');
 				}
@@ -80,7 +80,7 @@ chrome.tabs.query(
 		if (tabs?.length) {
 			chrome.tabs.sendMessage(
 				tabs[0].id,
-				{ action: 'model', model: 'Perplexity' },
+				{ action: 'model', model: 'perplexity' },
 				function (_) {
 					console.log('is Perplexity');
 				}
