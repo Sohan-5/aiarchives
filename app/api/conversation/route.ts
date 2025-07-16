@@ -56,7 +56,7 @@ export async function POST(req: NextRequest) {
 
     const formData = await req.formData();
     const file = formData.get('htmlDoc');
-    const model = formData.get('model')?.toString() ?? 'ChatGPT';
+    const model = formData.get('model')?.toString() ?? 'Perplexity';
 
     // Validate input
     if (!(file instanceof Blob)) {
