@@ -62,6 +62,8 @@ export async function parsePerplexity(html: string): Promise<Conversation> {
 
   chat += '</div>';
 
+  console.log(chat);
+
   return {
     model: 'Perplexity',
     content: chat,
