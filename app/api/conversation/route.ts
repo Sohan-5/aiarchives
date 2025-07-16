@@ -56,7 +56,7 @@ export async function POST(req: NextRequest) {
 
     const formData = await req.formData();
     const file = formData.get('htmlDoc');
-    const model = formData.get('model')?.toString() ?? 'Perplexity';
+    const model = formData.get('model')?.toString() ?? 'perplexity';
 
     // Validate input
     if (!(file instanceof Blob)) {
